@@ -1,38 +1,125 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100&family=Nunito+Sans:opsz@6..12&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.padding {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* Nav */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(200, 196, 201, 0.687);
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-item {
+  padding: 1vw;
+  color: rgb(72, 72, 72)
+}
+
+ul {
+  list-style-type: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Welcome */
+.welcome {
+  height: 50vh;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(121, 87, 121);
+  color: rgb(235, 235, 235);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* About */
+.about {
+  background-color: rgb(204, 191, 209);
+  text-align: center;
+  color: rgb(72, 72, 72);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.padding {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Projects */
+.projects {
+  background-color: rgb(146, 167, 169);
+  text-align: center;
+  color: rgb(72, 72, 72);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding:  15vh 0 15vh 0;
+}
+
+.projects-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  height: 30vh;
+  width: 25vw;
+  border: 2px solid rgb(86, 86, 86);
+  border-radius: 25px;
+  padding: 15px;
+  margin: 15px;
+  margin-top: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: aliceblue;
+}
+
+/* Contact */
+
+.container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: rgb(72, 72, 72);
+}
+
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+input, textarea {
+  width: 60%;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+textarea {
+  height: 50px;
 }
